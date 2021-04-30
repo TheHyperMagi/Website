@@ -43,7 +43,11 @@
 
             <li class="nav-item" id="menu3">
                 <a class="nav-link active" href="registration.html"> Registration </a>
-              </li>
+            </li>
+
+            <li class="nav-item" id="menu3">
+              <a class="nav-link" href="check_registration.html"> Check Registration </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -55,17 +59,22 @@
         <form action="submit.php" method="post">
             <div class="form-group">
                 <label for="name">Full Name</label>
-                <input type="name" class="form-control" id="name" placeholder="John Doe">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your name with anyone else.</small>
-              </div>
+                <input type="text" name="name" class="form-control" id="name" placeholder="John Doe">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your name.</small>
+            </div>
+            <div class="form-group">
+                <label for="nric">NRIC</label>
+                <input type="number" name="nric" class="form-control" id="nric" placeholder="############">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your NRIC.</small>
+            </div>
             <div class="form-group">
               <label for="email">Email address</label>
               <input type="email" class="form-control" id="email" placeholder="John@email.com">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email.</small>
             </div>
             <div class="form-group">
               <label for="contact_number">Contact Number</label>
-              <input type="tel" class="form-control" id="contact_number" placeholder="+123456789">
+              <input type="tel" class="form-control" id="contact_number" placeholder="+12345678910">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
