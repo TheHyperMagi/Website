@@ -42,11 +42,11 @@
               <a class="nav-link" href="page3.html"> J&J/Janssen </a>
             </li>
 			
-			<li class="nav-item" id="menu3">
+			<li class="nav-item" id="menu4">
 			  <a class="nav-link" href="registration.html"> Registration </a>
 			</li>
 
-			<li class="nav-item" id="menu3">
+			<li class="nav-item" id="menu5">
 			  <a class="nav-link active" href="check_registration.html"> Check Registration </a>
 			</li>
           </ul>
@@ -61,7 +61,7 @@
 			<div class="row">
 				<img
 					src="images/checkRegistrationBanner.png"
-					lt="Check Registration Banner"
+					alt="Check Registration Banner"
 					class="img-fluid"
 				/>
 				<h2 id="content" class="open d-lg-block">
@@ -73,8 +73,9 @@
 				<form action="reg_check.php" method="post">
 					<h3>
 						NRIC:
-						<input type="text" name="input_nric"></input>
+						<input type="text" name="input_nric" required />
 					</h3>
+					<br />
 					<button type="submit" class="btn btn-primary">Check</button>
 					<button type="reset" class="btn btn-primary">Reset</button>
 				</form> 
