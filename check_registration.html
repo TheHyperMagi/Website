@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html class="theme-cyan cdc-page-type-content cdc-2020" lang="en-us">
-<head>
+  <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <link rel="icon" href="images/syringe.png" type="image/png" />
     <link rel="stylesheet" href="home_files/bootstrap.css" />
     <link rel="stylesheet" href="home_files/app.css" />
-    
+
     <title>Check Registration | COVID-19 Info Center</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container-fluid site-title">
       <!-- <div class=""> -->
       <div class="container">
@@ -21,7 +20,7 @@
         </div>
       </div>
     </div>
-    
+
     <div id="cdc-meganav-wrapper">
       <div class="container" id="cdc-meganav-bar">
         <nav class="navbar navbar-expand-xl yamm">
@@ -41,13 +40,15 @@
             <li class="nav-item" id="menu3">
               <a class="nav-link" href="page3.html"> J&J/Janssen </a>
             </li>
-            
+
             <li class="nav-item" id="menu4">
               <a class="nav-link" href="registration.html"> Registration </a>
             </li>
 
             <li class="nav-item" id="menu5">
-              <a class="nav-link active" href="check_registration.html"> Check Registration </a>
+              <a class="nav-link active" href="check_registration.html">
+                Check Registration
+              </a>
             </li>
           </ul>
         </nav>
@@ -56,36 +57,41 @@
 
     <!-- Page Content Wrap -->
     <div class="container d-flex flex-wrap body-wrapper bg-white">
-        <!-- Content -->
-        <main class="col-xl-9 order-xl-2">
-            <div class="row">
-                <img
-					src="images/checkRegistrationBanner.png"
-					alt="Check Registration Banner"
-					class="img-fluid"
-				/>
-                <h2 id="content" class="open d-lg-block">
-                    Check Registration Status
-                </h2>
+      <!-- Content -->
+      <main class="col-xl-9 order-xl-2">
+        <div class="row">
+          <img
+            src="images/checkRegistrationBanner.png"
+            alt="Check Registration Banner"
+            class="img-fluid"
+          />
+          <h3 id="content" class="open d-lg-block">
+            Check Registration Status
+          </h3>
+        </div>
+
+        <div class="col-md-12">
+          <form action="reg_check.php" method="post">
+            <div class="form-group">
+              <label for="nric">NRIC</label>
+              <input
+                type="number"
+                name="nric"
+                class="form-control"
+                id="nric"
+                placeholder="############"
+              />
             </div>
-            
-            <div class="col-md-12">
-                <form action="reg_check.php" method="post">
-                    <h3>
-                        NRIC:
-                        <input type="text" name="input_nric" required />
-                    </h3>
-                    <br />
-                    <button type="submit" class="btn btn-primary">Check</button>
-                    <button type="reset" class="btn btn-primary">Reset</button>
-                </form> 
-                <br />
-                <br />
-            </div>						
-        </main>
+            <button type="submit" class="btn btn-primary">Check</button>
+            <button type="reset" class="btn btn-primary">Reset</button>
+          </form>
+          <br />
+          <br />
+        </div>
+      </main>
     </div>
-   
-   <div class="container-fluid">
+
+    <div class="container-fluid">
       <div class="container">
         <div class="card-body bg-quaternary">
           <h5>Disclaimer</h5>
@@ -102,6 +108,5 @@
         </div>
       </div>
     </div>
-    
-</body>
+  </body>
 </html>
