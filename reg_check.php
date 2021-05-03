@@ -53,7 +53,7 @@
         </nav>
       </div>
     </div>
-	
+
     <!-- Page Content Wrap -->
     <div class="container d-flex flex-wrap body-wrapper bg-white">
         <!-- Content -->
@@ -72,13 +72,12 @@
             <div class="col-md-12">
                 <?php
                     // echo $_POST['input_nric'];
-                    if (file_exists($_POST['input_nric'] . '.txt')) {
-                       echo '<h3>You are already registered!</h3><br>';
-                    }
-                    else{
-                        echo '<h3>You have not registered!</h3>';
-                        echo '<a href ="register.html">Please register here</a><br><br><br>';
-                    }
+                if (file_exists($_POST['input_nric'] . '.txt')) {
+                    echo '<h3>You are already registered!</h3><br>';
+                } else {
+                    echo '<h3>You have not registered!</h3>';
+                    echo '<a href ="register.html">Please register here</a><br><br><br>';
+                 }
                 ?>
             </div>
         </main>
