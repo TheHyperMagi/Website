@@ -5,6 +5,7 @@ on:
   push:
     branches:
     - master
+    - check_registration
 
 jobs:
   super-lint:
