@@ -68,12 +68,11 @@
 
       <div class="col-md-12">
         <?php
-        // echo $_POST['input_nric'];
         if (file_exists($_POST['nric'] . '.txt')) {
-          echo '<h3>You are already registered!</h3><br>';
+            echo '<h3>You are already registered!</h3><br>';
         } else {
-          echo '<h3>You have not registered!</h3>';
-          echo '<a href ="register.html">Please register here</a><br><br><br>';
+            echo '<h3>You have not registered!</h3>';
+            echo '<a href ="register.html">Please register here</a><br><br><br>';
         }
         ?>
       </div>

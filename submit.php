@@ -60,7 +60,9 @@
         <!-- Content -->
         <main class="col-xl-9 order-xl-2">
             <div class="row">
-                <img src="images/RegistrationStatusBanner.jpg" alt="Registration Status Banner" class="img-fluid rounded float-left" />
+                <img src="images/RegistrationStatusBanner.jpg" 
+                alt="Registration Status Banner" 
+                class="img-fluid rounded float-left" />
                 <h2 id="content" class="open d-lg-block">
                     Registration Status
                 </h2>
@@ -70,7 +72,6 @@
                 if (file_exists($_POST['nric'] . '.txt')) {     //Check for filename with given nric
                     echo '<h3>You are already registered!</h3>';
                 } else {   //filename not found, write to file
-
                     $content_to_write = "Name: " . $_POST['name'] . "\n";
                     $content_to_write .= "NRIC: " . $_POST['nric'] . "\n";
                     $content_to_write .= "Email: " . $_POST['email'] . "\n";
@@ -78,7 +79,6 @@
                     file_put_contents($_POST['nric'] . '.txt', $content_to_write);
                     echo '<h3>Registration is successful!</h3>';
                 }
-
                 ?>
             </div>
         </main>
